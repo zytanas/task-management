@@ -1,0 +1,132 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    text-transform: capitalize;
+}
+
+.btn-add {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #0060df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add:hover {
+    background-color: #0149a7;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.task-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.task-info input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.task-info span {
+    text-transform: capitalize;
+    justify-content: center;
+}
+
+.task-item.completed .task-info span {
+    color: #6c757d;
+}
+
+.task-item:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-delete {
+    padding: 0.3rem;
+    font-size: 1.3rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer; 
+    transition: color 0.3s ease;
+}
+
+.btn-delete:hover {
+    color: #dc3545; 
+}
+
+.tag {
+    margin-right: 1rem;
+    font-size: 0.6rem;
+}
+
+.tag-container {
+    display: flex;
+    align-items: center;
+}
+
+.tag.completed {
+    color: #ffffff;
+    background-color: #00703cc5;
+    padding: 0.3rem 0.5rem;
+    border-radius: 15px;
+}
+
+.tag.incomplete {
+    color: #ffffff;
+    background-color: #c82823b9;
+    padding: 0.3rem 0.5rem;
+    border-radius: 15px;
+}
